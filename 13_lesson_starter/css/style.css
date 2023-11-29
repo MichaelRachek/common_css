@@ -17,6 +17,7 @@ body {
   width: 75vw;
   height: 85vh;
   margin: 40px auto;
+  position: relative;
 }
 
 .inner-container {
@@ -31,4 +32,86 @@ body {
   height: 150px;
   color: #fff;
   padding: 1rem;
+}
+
+.absolute {
+  background: #00f;
+  position: absolute;
+  z-index: 1;
+}
+
+.relative {
+  background: red;
+  position: relative;
+  top: 300px;
+  left: 100px;
+}
+
+.fixed {
+  background: green;
+  position: fixed;
+  top: 100px;
+}
+
+.sticky {
+  background: black;
+  position: sticky;
+  top: 0;
+}
+
+/*new section*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+/*100% view screen*/
+   height: 100vh;
+}
+
+.blue {
+  background: blue;
+}
+
+.red {
+  background: red;
+}
+
+.green{
+  background: green;
+}
+
+header, footer {
+  color: white;
+  height: 100px;
+  text-align: center;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  font-size: 5rem;
+}
+
+footer {
+  background: black;
+  position: sticky;
+  bottom: 0;
+  font-size: 3rem;
+}
+
+a:visited {
+  color: white;
+}
+
+.social {
+  background: royalblue;
+  color: white;
+  font-size: inherit;
+  padding: 1rem;
+  position: fixed;
+  top: 30%;
+  left: 0;
+  z-index: 1;
 }
